@@ -41,3 +41,7 @@ _ReSharper*/
 *.dotCover
 NDependOut/
 *.ndproj
+
+#nuget
+!/src/*/packages/*/*/*/*.exe
+!/src/*/packages/*/*/*/*/*.exe
