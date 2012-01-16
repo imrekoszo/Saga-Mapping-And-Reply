@@ -3,3 +3,10 @@ Demonstrating 2 things:
 - NServiceBus Bus.SendLocal(), Bus.Reply() and Saga.ReplyToOriginator() don't need endpoint configurations to be present
 	(they explicitly define the endpoint internally)
 - It is possible to use a mixed saga finding configuration, i.e. some messages are associated with a saga based on the ConfigureHowToFindSaga() override, while others can implement ISagaMessage and use the default association based on their SagaId property
+
+
+The solution is in src, set the startup configuration to start the following projects:
+-	Sagamappingreply
+-	Smr.Handler
+-	Smr.Tc
+And  you should be able to ctrl-f5 it easily.
